@@ -1,0 +1,36 @@
+device: "cuda"
+half_precision: false
+
+yolo:
+  # Relative to project root — place your model at models/best.pt
+  model_path: "models/best.pt"
+  conf_threshold: 0.5
+
+ocr:
+  use_gpu: true
+
+tracker:
+  max_age: 30
+  min_hits: 1
+  iou_threshold: 0.2
+
+persistence:
+  lost_buffer_frames: 30
+  reassign_iou_thresh: 0.65
+  ema_alpha: 0.7
+
+stabilization:
+  history_size: 15
+  vote_threshold: 0.55
+  min_samples: 3
+
+ui:
+  show_panel: true
+  show_zoom: true
+  show_fps: true
+  panel_width_ratio: 0.33
+
+logging:
+  enable_csv: true
+  enable_json: true
+  log_directory: "logs"
