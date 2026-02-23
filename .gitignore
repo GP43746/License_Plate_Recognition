@@ -1,0 +1,32 @@
+# Virtual environment
+ocr/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Logs and output
+logs/
+*.csv
+*.jsonl
+*_output.mp4
+
+# Model weights (large binary — distribute separately)
+models/*.pt
+
+# Video source files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Env / secrets
+*.env
+.env
